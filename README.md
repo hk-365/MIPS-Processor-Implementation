@@ -13,12 +13,9 @@ This processor deviates from the traditional 5-stage MIPS pipeline, utilizing a 
 ### 1. Instruction Encoding
 
 The control unit natively decodes standard 32-bit MIPS instruction formats, extracting the appropriate opcodes, register addresses, shift amounts, and immediate values combinationally.
-* **R-Type (Register):** Used for arithmetic, shifting, and logical operations (`add`, `sub`, `and`, `sll`, `slt`).
-  `[31:26] Opcode | [25:21] rs | [20:16] rt | [15:11] rd | [10:6] shamt | [5:0] funct`
-* **I-Type (Immediate):** Used for data transfer, branching, and immediate arithmetic (`lw`, `sw`, `beq`, `addi`, `lui`).
-  `[31:26] Opcode | [25:21] rs | [20:16] rt | [15:0] Immediate (Sign/Zero Extended)`
-* **J-Type (Jump):** Used for unconditional control flow (`j`, `jal`).
-  `[31:26] Opcode | [25:0] Target Address`
+* **R-Type (Register):** Used for arithmetic, shifting, and logical operations (`add`, `sub`, `and`, `sll`, `slt`).<br>`[31:26] Opcode | [25:21] rs | [20:16] rt | [15:11] rd | [10:6] shamt | [5:0] funct`
+* **I-Type (Immediate):** Used for data transfer, branching, and immediate arithmetic (`lw`, `sw`, `beq`, `addi`, `lui`).<br>`[31:26] Opcode | [25:21] rs | [20:16] rt | [15:0] Immediate (Sign/Zero Extended)`
+* **J-Type (Jump):** Used for unconditional control flow (`j`, `jal`).<br>`[31:26] Opcode | [25:0] Target Address`
 
 ### 2. The 3-Cycle Execution FSM
 
