@@ -1,7 +1,6 @@
 # 32-bit Custom MIPS Processor (3-Cycle Architecture)
 
 A custom 32-bit MIPS processor built from scratch in Verilog, synthesized, and implemented for Xilinx 7-Series FPGA architecture. This project was built as a course project for CS220 - Computer Organization and Architecture at IIT Kanpur under the supervision of [Prof. Mainak Chaudhuri](https://www.iitk.ac.in/dr-mainak-chaudhuri).
-
 This project demonstrates full Register Transfer Level (RTL) design, a multi-cycle finite state machine (FSM) control unit, Big-Endian sub-word memory access, and hardware-software handshaking protocols.
 ---
 
